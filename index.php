@@ -1,49 +1,5 @@
-<!DOCTYPE html>
-<html s lang="pt-br">
-<head>
-	<meta charset="utf-8">
-	<meta >
-	<link rel="stylesheet" type="text/css" href="body/style.css">
-	<link rel="stylesheet" type="text/css" href="body/image.css">
-	<link rel="shortcut icon" href="images/header/cake-icon.png" />
-
-	<title>Test-kun</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<?php include('body/extra.php');?>
-
-</head>
+<?php include("body/header.php");?>
 <body>
-	<!--INICIO-->
-	<nav class="navbar navbar-expand-lg">
-	  <div class="container-fluid container">
-	    <a class="navbar-brand" href="#"><img id="logo" src="images/header/logo.png" alt="Logo"></a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" style="justify-content: flex-end;" id="navbarNav">
-	      <ul class="navbar-nav">
-	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="#">Home</a>
-	        </li>
-	        <li class="nav-item d-flex">
-	          <a class="nav-link" href="#">Home</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">Sobre-Mim</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">Bolos</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">Almoços</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">Fale comigo</a>
-	        </li>
-	      </ul>
-	    </div>
-	  </div>
-	</nav>
 	<!--INICIO imagem principal-->
 	<section id="imag-up">
 		<div class="title">

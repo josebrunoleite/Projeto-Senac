@@ -8,6 +8,17 @@ h1{
 	font-size: 36px;
 	text-transform: uppercase;
 }
+.container{
+    max-width: 1170px;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Aqui CSS da NAVBAR*/
 .navbar{
 	background: rgba(237, 160, 12, 0.6);
 	font-family:'Poppins', sans-serif;
@@ -20,9 +31,10 @@ h1{
 	color: black !important;
 	margin-left: 25px;
 }
-.nav-item:hover{
+.nav-link:hover{
 	color: #C42430 !important;
 }
+/*Aqui CSS da imagem principal*/
 #imag-up{
 	display: flex;
 	align-items: center;
@@ -32,17 +44,7 @@ h1{
 	justify-content: center;
 	margin: 0 auto;
 }
-
-.container{
-    max-width: 1170px;
-    padding: 1em 0;
-    margin: 0 auto;
-}
-.flex-center{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+/*Aqui CSS do Sobre-mim*/
 .info{
 	background-color: rgba(247, 141, 12, 0.8);
 }
@@ -58,6 +60,7 @@ h1{
 .info-text p{
 	margin: 20px;
 }
+/*Aqui CSS dos Cards Tripo*/
 .card img{
 	max-width: 320px;
 	max-height: 223px;
@@ -67,6 +70,7 @@ h1{
 	font-size: 26px !important;
 	color: red;
 }
+/*Aqui CSS do footer*/
 .font-fot{
 	font-size: 20px !important;
 }

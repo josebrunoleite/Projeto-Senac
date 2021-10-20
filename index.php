@@ -3,17 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta >
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="image.css">
+	<link rel="stylesheet" type="text/css" href="body/style.css">
+	<link rel="stylesheet" type="text/css" href="body/image.css">
+	<link rel="shortcut icon" href="images/header/cake-icon.png" />
+
 	<title>Test-kun</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<?php include('extra.php');?>
+	<?php include('body/extra.php');?>
 
 </head>
 <body>
+	<!--INICIO NavBar-->
 	<nav class="navbar navbar-expand-lg">
 	  <div class="container-fluid container">
-	    <a class="navbar-brand" href="#"><img id="logo" src="../images/header/logo.png" alt="Logo"></a>
+	    <a class="navbar-brand" href="#"><img id="logo" src="images/header/logo.png" alt="Logo"></a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
@@ -41,18 +44,18 @@
 	    </div>
 	  </div>
 	</nav>
-	<!--INICIO IMAGEM-->
-	<div id="imag-up">
+	<!--INICIO imagem principal-->
+	<section id="imag-up">
 		<div class="title">
 			<h2 id="Title-Ima">IMAGEM ESTATICA COM O NOME E A LOGO NO MEIO</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua.</p>
 		</div>
-	</div>
-	<!--MEIO-->
+	</section>
+	<!--INICIO Sobre-mim-->
 	<section class="info">
 		<div class="clearfix  container">
-		  	<img src="../images/sobre-mim/nome.png" class="col-md-3 float-start mb-3 ms-md-3" alt="...">
+		  	<img src="images/sobre-mim/nome.png" class="col-md-3 float-start mb-3 ms-md-3" alt="...">
 		  	<div class="text-center info-text">
 			  <h1>
 			    Sobre mim.
@@ -68,63 +71,31 @@
 			</div>
 		</div>
 	</section>
+
 	<section>
+		<!--INICIO Cards Tripo-->
 		<div class="card-group">
 		  <div class="card">
-		    <img src="../images/card/card-1.png" class="card-img-top " alt="...">
+		    <img src="images/card/card-1.png" class="card-img-top " alt="...">
 		    <div class="card-body">
 		      <h1 class="card-title text-center">Bolos</h1>
 		    </div>
 		  </div>
 		  <div class="card">
-		    <img src="../images/card/card-2.png" class="card-img-top " alt="...">
+		    <img src="images/card/card-2.png" class="card-img-top " alt="...">
 		    <div class="card-body">
 		      <h1 class="card-title text-center">Especiais</h1>
 		    </div>
 		  </div>
 		  <div class="card">
-		    <img src="../images/card/card-3.png" class="card-img-top" alt="...">
+		    <img src="images/card/card-3.png" class="card-img-top" alt="...">
 		    <div class="card-body">
 		      <h1 class="card-title text-center">Gourmet</h1>
 		    </div>
 		  </div>
 		</div>
-		<!-- Teste... <div class="card-group flex-center container">
-			<div class=" titulo">
-				<h1 style="font-size: 24px;">GOURMET</h1>
-			</div>
-			<div class="titulo">
-				<h1>NANANA</h1>
-			</div>
-			<div class="titulo">
-				<h1>AHAHAHA</h1>
-			</div>-->
-		</div>
 	</section>
-	<section>
-		<div class="card-group container">
-			<div class="card text-black">
-			  <img src="card-3.png" class="card-img" alt="...">
-			  <div class="card-img-overlay">
-			    <h5 class="card-title">Card title</h5>
 
-			  </div>
-			</div>
-			<div class="card text-black">
-			  <img src="card-3.png" class="card-img" alt="...">
-			  <div class="card-img-overlay">
-			    <h5 class="card-title">Card title</h5>
-
-			  </div>
-			</div>
-			<div class="card text-black">
-			  <img src="card-3.pnglass="card-img" alt="...">
-			  <div class="card-img-overlay">
-			    <h5 class="card-title">Card title</h5>
-			  </div>
-			</div>
-		</div>
-	</section>
 	<!-- Aqui Começa o Instragram
 	<section>
 		<div class="row row-cols-1 row-cols-md-2 g-1">
@@ -165,8 +136,10 @@
 		    </div>
 		  </div>
 		</div>
-	</section>
-	Aqui acaba o Instragram-->
+	</section>-->
+
+
+	<!--INICIO Footer-->
 	<div class="border-top">
 		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
 		    <p class="col-md-4 mb-0 text-muted font-fot">&copy; 2021 Company, Inc</p>
@@ -182,7 +155,6 @@
 		    </ul>
 		  </footer>
 		</div>
-
 	<div class="b-example-divider"></div>
 </body>
 </html>

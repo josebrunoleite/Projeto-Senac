@@ -1,12 +1,4 @@
-#ima-1{
-	background: url(..images/card/card-3.png);
-}
-#ima-2{
-	background: url(card-3.png);
-}
-#ima-3{
-	background: url(card-3.png);
-}
+
 .card{
 	background-repeat: no-repeat !important;
 	padding: 80px 150px;

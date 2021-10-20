@@ -1,0 +1,72 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+h1{
+	font-family: 'Rammetto One', cursive;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+.navbar{
+	background: rgba(237, 160, 12, 0.6);
+	font-family:'Poppins', sans-serif;
+}
+.nav-item{
+	font-size: 18px;
+	font-weight: 500;
+}
+.nav-link{
+	color: black !important;
+	margin-left: 25px;
+}
+.nav-item:hover{
+	color: #C42430 !important;
+}
+#imag-up{
+	display: flex;
+	align-items: center;
+	background: url(../images/slide/padaria.png);
+	height: 500px;
+	background-repeat: no-repeat;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.container{
+    max-width: 1170px;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info{
+	background-color: rgba(247, 141, 12, 0.8);
+}
+.info img{
+	width: 470px;
+	height: 400px;
+	margin: 20px;
+}
+.info-text{
+	color: white !important;
+	margin-top: 2rem;
+}
+.info-text p{
+	margin: 20px;
+}
+.card img{
+	max-width: 320px;
+	max-height: 223px;
+	margin: 0 auto;
+}
+.card-title{
+	font-size: 26px !important;
+	color: red;
+}
+.font-fot{
+	font-size: 20px !important;
+}

@@ -1,0 +1,29 @@
+#ima-1{
+	background: url(..images/card/card-3.png);
+}
+#ima-2{
+	background: url(card-3.png);
+}
+#ima-3{
+	background: url(card-3.png);
+}
+.card{
+	background-repeat: no-repeat !important;
+	padding: 80px 150px;
+	border: none !important;
+	margin: 10px 20px;
+}
+.text-card{
+	font-size: bold;
+	border: 3px solid red;
+	align-items: center;
+}
+.card img{
+	padding: 0px;
+}
+/*.col{
+	max-width: 50px;
+}
+.col img{
+	height: 60px;
+}*/

@@ -13,7 +13,7 @@
 
 </head>
 <body>
-	<!--INICIO NavBar-->
+	<!--INICIO-->
 	<nav class="navbar navbar-expand-lg">
 	  <div class="container-fluid container">
 	    <a class="navbar-brand" href="#"><img id="logo" src="images/header/logo.png" alt="Logo"></a>

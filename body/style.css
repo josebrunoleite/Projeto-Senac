@@ -57,8 +57,9 @@ h1{
 	font-size: 26px !important;
 	color: red;
 }
-#instra, .card{
-	background-color: rgba(237, 160, 12, 0.8);
+#instra, .card-inst{
+	background-color: rgba(237, 160, 12, 0.8) !important;
+	padding: 10px;
 }
 /*Aqui CSS do footer*/
 .font-fot{

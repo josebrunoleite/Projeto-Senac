@@ -2,3 +2,6 @@
 	background-color: rgba(237, 160, 12, 0.8) !important;
 	border-radius: 	10px;
 }
+.navbar-toggler-icon{
+	color:black !important;
+}

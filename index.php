@@ -1,9 +1,47 @@
-<?php include("body/header.php");?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="body/style.css">
+	<link rel="stylesheet" type="text/css" href="body/image.css">
+	<title>Test-kun</title>
+	<?php include("body/header.php");?>
+</head>
+<header>
+	<!--INICIO-->
+	<nav class="navbar navbar-expand-lg">
+	  <div class="container-fluid container">
+	    <a class="navbar-brand" href="#"><img id="logo" src="images/header/logo.png" alt="Logo"></a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" style="justify-content: flex-end;" id="navbarNav">
+	      <ul class="navbar-nav">
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Home</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Sobre-Mim</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Bolos</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Almoços</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Fale comigo</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+</header>
 <body>
 	<!--INICIO imagem principal-->
 	<section id="imag-up">
-		<div class="title">
-			<h2 id="Title-Ima">IMAGEM ESTATICA COM O NOME E A LOGO NO MEIO</h2>
+		<div id="title-up">
+			<h2 id="Title-Ima"><img src="images/header/Reserva/marlucy gourmet.png" height="40px" alt="Logo"></h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua.</p>
 		</div>
@@ -52,44 +90,13 @@
 		</div>
 	</section>
 
-	<!-- Aqui Começa o Instragram
-	<section>
+	<!-- Aqui Começa o Instragram-->
+	<section id="instra">
+		<h1 class="text-center">Instragram</h1>
 		<div class="row row-cols-1 row-cols-md-2 g-1">
 		  <div class="col">
-		    <div class="card h-100">
-		      <img src="card-3.png" class="card-img-top" alt="...">
-		      <div class="card-body">
-		        <h5 class="card-title">Card title</h5>
-		        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-		      </div>
-		    </div>
-		  </div>
-		  <div class="col">
-		    <div class="card h-100">
-		      <img src="card-3.png" class="card-img-top" alt="...">
-		      <div class="card-body">
-		        <h5 class="card-title">Card title</h5>
-		        <p class="card-text">This is a short card.</p>
-		      </div>
-		    </div>
-		  </div>
-		  <div class="col">
-		    <div class="card h-50">
-		      <img src="card-3.png" class="card-img-top" alt="...">
-		      <div class="card-body">
-		        <h5 class="card-title">Card title</h5>
-		        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-		      </div>
-		    </div>
-		  </div>
-		  <div class="col">
-		    <div class="card h-100">
-		      <img src="card-3.png" class="card-img-top" alt="...">
-		      <div class="card-body">
-		        <h5 class="card-title">Card title</h5>
-		        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-		      </div>
-		    </div>
+		    <div class="card h-60">
+			</div>
 		  </div>
 		</div>
 	</section>-->

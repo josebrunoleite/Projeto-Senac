@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="body/image.css">
 	<link rel="stylesheet" type="text/css" href="body/instra.css">
 	<link rel="shortcut icon" href="../images/header/cake-icon.png" />
-	<title>Test-kun</title>
+	<title>Projeto Senac</title>
 	<?php include("body/header.php");?>
 </head>
 <header>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="shortcut icon" href="images/favicon.png">
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">

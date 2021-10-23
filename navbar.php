@@ -7,7 +7,7 @@
       <div class="collapse navbar-collapse" style="justify-content: flex-end;" id="navbarNav">
         <ul class="navbar-nav">
         
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="index.php">Home</a>
                  
             <a class="nav-link" href="#">Sobre-Mim</a>
          
@@ -17,7 +17,7 @@
           
             <a class="nav-link" href="#">Almoços</a>
           
-            <a class="nav-link" href="#">Fale comigo</a>
+            <a class="nav-link" href="formulario.php">Fale comigo</a>
          
         </ul>
       </div>

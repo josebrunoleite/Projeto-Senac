@@ -1,5 +1,7 @@
-
- 	
+ 	<link rel="stylesheet" type="text/css" href="body/style.css">
+	<link rel="stylesheet" type="text/css" href="body/image.css">
+	<link rel="stylesheet" type="text/css" href="body/instra.css">
+	<link rel="stylesheet" type="text/css" href="body/responsive.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--Fonte-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">

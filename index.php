@@ -2,10 +2,6 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="body/style.css">
-	<link rel="stylesheet" type="text/css" href="body/image.css">
-	<link rel="stylesheet" type="text/css" href="body/instra.css">
-	<link rel="stylesheet" type="text/css" href="body/responsive.css">
 	<link rel="shortcut icon" href="../images/header/cake-icon.png" />
 	<title>Projeto Senac</title>
 	<?php include("body/header.php");?>
@@ -66,9 +62,9 @@
 		  </div>
 		</div>
 	</section>
-
+<?php include_once('instragram.php') ?>
 	<!-- Aqui Começa o Instragram
-	<?php include_once('instragram.php') ?>
+	
 Codigo do instragram ficou imenso por isso eu retirei-->
 
 	<!--INICIO Footer-->

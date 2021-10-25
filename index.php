@@ -44,7 +44,7 @@
 		  <div class="card">
 		    <img src="images/card/card-1.png" class="card-img-top " alt="...">
 		    <div class="card-body">
-		      <h1 class="card-title text-center">Bolos</h1>
+		      <h1 class="card-title text-center"> <a href="bolos.php">Bolos</a></h1>
 		    </div>
 		  </div>
 		  <div class="card">

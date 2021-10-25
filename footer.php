@@ -23,11 +23,13 @@
     </a>
 
     <ul class="nav col-md-4 justify-content-end">
-      <li class="nav-item"><a class="nav-link px-2"><i class="bi bi-envelope link-light"></i></i></a></li>
-      <li class="nav-item"><a class="nav-link px-2"><i class="bi bi-instagram link-light"></i></a></li>
-      <li class="nav-item"><a class="nav-link px-2"><i class="bi bi-linkedin link-light"></i></a></li>
-      <li class="nav-item"><a class="nav-link px-2"><i class="bi bi-whatsapp link-light"></i></a></li>
+      <li class="nav-item"><a href="#" target="_blank" class="nav-link px-2"><i class="bi bi-envelope link-light"></i></i></a></li>
+      <li class="nav-item"><a href="#" target="_blank"  class="nav-link px-2"><i class="bi bi-instagram link-light"></i></a></li>
+      <li class="nav-item"><a href="#" target="_blank"  class="nav-link px-2"><i class="bi bi-linkedin link-light"></i></a></li>
+      <li class="nav-item"><a href="#" target="_blank"  class="nav-link px-2"><i class="bi bi-whatsapp link-light"></i></a></li>
     </ul>
   </footer>
 </div>
 </div>
+</body>
+</html>

@@ -11,7 +11,7 @@
                  
             <a class="nav-link" href="#">Especias</a>
                  
-            <a class="nav-link" href="#">Bolos</a>
+            <a class="nav-link" href="bolos.php">Bolos</a>
                    
             <a class="nav-link" href="#">Almoços</a>
           

@@ -14,19 +14,19 @@
   </symbol>
 </svg>
 <div class="footer bottom-0 ">
-<div class=".container-sv">
+<div class="container-fluid container">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-6">
-    <p class="col-md-4 mb-0 text-muted">© 2021 Company, Inc</p>
+    <p class="col-md-4 mb-0 link-light">© 2021 Company, Inc</p>
 
-    <a href="/" class="col-md-4 word-wrap text-foot d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-      <p>Comidas congeladas e preparação de jantar/almoço em domicílio na cidade de Salvador</p>
+    <a href="/" class="col-md-4 word-wrap text-foot d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+      <p>Comidas congeladas e preparação de jantar/<br>almoço em domicílio na cidade de Salvador</p>
     </a>
 
     <ul class="nav col-md-4 justify-content-end">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="bi bi-envelope"></i></i></a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="bi bi-instagram"></i></a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="bi bi-linkedin"></i></a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="bi bi-whatsapp"></i></a></li>
+      <li class="nav-item"><a class="nav-link px-2"><i class="bi bi-envelope link-light"></i></i></a></li>
+      <li class="nav-item"><a class="nav-link px-2"><i class="bi bi-instagram link-light"></i></a></li>
+      <li class="nav-item"><a class="nav-link px-2"><i class="bi bi-linkedin link-light"></i></a></li>
+      <li class="nav-item"><a class="nav-link px-2"><i class="bi bi-whatsapp link-light"></i></a></li>
     </ul>
   </footer>
 </div>

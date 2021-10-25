@@ -9,12 +9,10 @@
         
             <a class="nav-link" href="index.php">Home</a>
                  
-            <a class="nav-link" href="#">Sobre-Mim</a>
-         
-         
+            <a class="nav-link" href="#">Especias</a>
+                 
             <a class="nav-link" href="#">Bolos</a>
-         
-          
+                   
             <a class="nav-link" href="#">Almoços</a>
           
             <a class="nav-link" href="formulario.php">Fale comigo</a>

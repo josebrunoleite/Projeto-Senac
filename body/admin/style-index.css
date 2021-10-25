@@ -7,10 +7,17 @@ html, body{
 }
 body{
 	display: flex;
-	align-items: center;
 	background-image: url('https://images.unsplash.com/photo-1562967914-608f82629710?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib');
 	height: 100%;
 	background-repeat: no-repeat;
 	align-items: center;
-	justify-content: center;
+
+}
+form{
+	background-color: rgba(255, 255, 255, 0.7);
+	margin: 0 auto;
+	width: 100%;
+	max-width: 350px;
+	border-radius: 10px;
+	
 }

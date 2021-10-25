@@ -8,13 +8,14 @@
 </head>
 <body>
 	<?php include('navbar.php')?>
-	<h1 class="text-center mb-3"> Formulario para contato</h1>
+	<h1 class="text-center mt-3"> Formulário para contato</h1>
+	<p class="text-center">Preencha o formulário abaixo e aguarde o contato</p>
 	<form class="container">
 	<div class="input-group mb-3">
-	  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+	  <input type="text" class="form-control" placeholder="Insira seu Nome" aria-label="nome" aria-describedby="basic-addon1">
 	</div>
 	<div class="input-group mb-3">
-	  <input type="text" class="form-control" placeholder="Motivo" aria-label="Motivo" aria-describedby="basic-addon1">
+	  <input type="text" class="form-control" placeholder="Insira o motivo" aria-label="Motivo" aria-describedby="basic-addon1">
 	</div>
 
 	<div class="input-group mb-3">
@@ -27,7 +28,7 @@
 	  <textarea class="form-control" aria-label="With textarea"></textarea>
 	</div>
 	  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="color btn btn-primary">Enviar</button>
 </form>
 
 </body>

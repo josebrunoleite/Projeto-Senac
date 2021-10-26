@@ -75,6 +75,9 @@ h1{
 	color: black;
 	padding: -2px 0;
 }
+footer p{
+	color: black;
+}
 .font-fot{
 	font-size: 20px !important;
 }

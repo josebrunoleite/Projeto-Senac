@@ -13,27 +13,33 @@
 	<!--INICIO imagem principal-->
 	<section id="imag-up">
 		<div id="title-up">
-			<img id="title-ima" src="images/header/Reserva/marlucy gourmet.png" alt="Logo">
+			<h1 style="color: red;">MarlucyGourmet</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua.</p>
 		</div>
 	</section>
 	<!--INICIO Sobre-mim-->
 	<section class="info">
-		<div class="clearfix  container">
-		  	<img src="images/sobre-mim/nome.png" class="col-md-3 float-start mb-3 ms-md-3" alt="...">
-		  	<div class="text-center info-text">
-			  <h1>
-			    Sobre mim.
-			  </h1>
+		<div class="clearfix container">
+			<div class="row">
+				<div class="row">
+			  		<img src="images/sobre-mim/nome.png" class="float-start" alt="...">
+			  	</div>
+			  	<div class="row">
+				  	<div class="info-text">
+					  <h1>
+					    Sobre mim.
+					  </h1>
 
-			  <p>
-			    As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
-			  </p>
+					  <p>
+					    As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+					  </p>
 
-			  <p>
-			    And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
-			  </p>
+					  <p>
+					    And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+					  </p>
+					 </div>
+				</div>
 			</div>
 		</div>
 	</section>

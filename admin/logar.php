@@ -10,6 +10,19 @@ include('../config/connect.php');
         $stmt->bindParam(":PASSWORD", $password);
         $stmt->execute();
 
+        if($stmt->rowCount() == 1){
+            $info = $stmt->fetch();
+            $_SESSION['logado'] = true;
+            $_SESSION['id'] = $info['id'];
+            $_SESSION['nome'] = $info['nome'];
+            $_SESSION['login'] = $info['login'];
+            $_SESSION['senha'] = $info['senha'];
+                
+            header("Location: main.php");
+        }else{
+            echo 'Usuário não cadastrado.';
+        }
+
 
 
 ?>

@@ -17,13 +17,16 @@
 				</div>
 		  		<div class="mb-3">
 				    <label for="exampleInputEmail1" class="form-label">Login</label>
-				    <input type="text" class="form-control" value="login" name="login" id="exampleInputEmail1" aria-describedby="emailHelp">
+				    <input type="text" class="form-control" placeholder="Digite seu usuário" name="usuario" id="exampleInputEmail1" aria-describedby="emailHelp">
 				</div>
 				<div class="mb-3">
 				    <label for="exampleInputPassword1" class="form-label">Senha</label>
-				    <input type="password" class="form-control" value="password" name="password" id="exampleInputPassword1">
+				    <input type="password" class="form-control" placeholder="Digite sua senha" name="senha" id="exampleInputPassword1">
 				</div>
-				  <button type="submit" value="ENVIAR" class="btn btn-primary">Enviar</button>
+				  <button type="submit" value="ENVIAR" class="btn btn-primary">Login</button>
+				  <div>
+				  <p>Ainda não é cadastrado ?</p><strong> <a href="register.php">Cadastre-se aqui</strong></a>
+				  </div>
 				   <div id="emailHelp" class="form-text">Fotografado por <a href="https://unsplash.com/@leoroza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Léo Roza</a> de <a href="https://unsplash.com/s/photos/comida?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 				   	</div>
 				  

@@ -1,5 +1,6 @@
 <?php
 include_once('../config/connect.php');
+header('Location: view.php');
    $stmt = $conn->prepare("INSERT INTO users (id, name, login, password) VALUES(:ID, :NAME, :LOGIN, :PASSWORD)");
 
    $id = $_POST['id'];

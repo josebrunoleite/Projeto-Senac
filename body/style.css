@@ -1,4 +1,7 @@
-
+*{
+	padding: 0;
+	margin: 0;
+}
 h1{
 	font-family: 'Rammetto One', cursive;
 	font-size: 36px;
@@ -43,18 +46,7 @@ h1{
 .info{
 	background-color: rgba(247, 141, 12, 0.8) !important;
 }
-.info img{
-	width: 470px;
-	height: 400px;
-	margin: 20px;
-}
-.info-text{
-	color: white !important;
-	margin-top: 2rem;
-}
-.info-text p{
-	margin: 20px;
-}
+
 /*Aqui CSS dos Cards Tripo*/
 .card img{
 	max-width: 320px;

@@ -1,5 +1,5 @@
 <?php
 
-$conn = new PDO("mysql:dbname=tido02; host=mysql.tido.com.br", "tido02", "Alunossenac21bd");
+$conn = new PDO("mysql:dbname=tido01; host=mysql.tido.com.br", "tido01", "Alunossenac21bd");
 
 ?>  

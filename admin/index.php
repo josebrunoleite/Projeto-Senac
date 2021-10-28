@@ -10,7 +10,7 @@
 
 </head>
 <body class="text-center">
-	<form id="form-login align-middle" action="../conec/login.php" method="POST">
+	<form id="form-login align-middle" action="logar.php" method="POST">
 		<div class="mb-3">
 			<img src="https://cdn.discordapp.com/emojis/237066985844768768.png" class="mb-4 mt-3" width="80px" alt="login">
 			<h3>Login Painel Administrativo</h3>

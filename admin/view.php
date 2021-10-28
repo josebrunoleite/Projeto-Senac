@@ -14,3 +14,9 @@ $results = $stmt->fetchALL(PDO::FETCH_ASSOC);
  }
 
  ?>
+ 
+<html>
+<body>
+<img src="<?=$post["image"]?>" width="80px" alt="">
+</body>
+</html>

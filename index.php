@@ -85,10 +85,13 @@ Codigo do instragram ficou imenso por isso eu retirei-->
     right: 40px;
     z-index: 2;
     font-size: 2rem;
-    background-color: seagreen !important; 
+    background-color: #25D366 !important; 
     border-radius: 50px; 
     height: 45px; 
-    padding: 5px 2px;
+    padding: 6px 2px;
     line-height: 1px; 
-}
+	}
+	.bi-whatsapp{
+		color: whitesmoke;
+	}
 </style>

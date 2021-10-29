@@ -3,11 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Formu</title>
+	<title>Formuario de produtos</title>
 	<link rel="stylesheet" href="">
 </head>
 <body>
 	<form action="create-cast.php" method="POST" enctype="multipart/form-data" accept-charset="utf-8">
+		<input type="text" name="id">
 		<input type="text" name="nome">
 		<input type="text" name="category">
 		<input type="file" name="image">

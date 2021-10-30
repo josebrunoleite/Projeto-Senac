@@ -20,5 +20,5 @@ $stmt->bindParam(':DESCRIPTION', $description);
 $stmt->bindParam(':IMAGE', $image);
 $stmt->execute();
 
-header("Location: form-products.php");
+
 ?>

@@ -6,6 +6,13 @@
 	<title>Formuario de produtos</title>
 	<link rel="stylesheet" href="../body/admin/header-admin.php">
 </head>
+<?php
+session_start();
+if ($_SESSION['logado'] != true) {
+	session_destroy();
+	header("Location: index.php");
+}
+?>
 <body>
 		<div class="input-group">
 		<form action="create-cast.php" method="POST" enctype="multipart/form-data" accept-charset="utf-8">

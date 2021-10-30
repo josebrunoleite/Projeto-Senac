@@ -1,17 +1,29 @@
 <?php
 include('../config/connect.php');
-if ($_SESSION['logado'] != true) {
-/*	session_destroy();
-	header("Location: index.php");*/
-}
+
 
 $stmt = $conn->prepare("SELECT * FROM products ORDER BY id");
 $stmt->execute();
 
 $result = $stmt->fetchALL(PDO::FETCH_ASSOC);
 ?>
+<?php
+session_start();
+if ($_SESSION['logado'] != true) {
+	session_destroy();
+	header("Location: index.php");
+}
+if (isset($_POST['sair'])) {
+	$_SESSION = array();
+	session_destroy();
+	header("Location: index.php");
+	die();
+}
+?>
 <div class="container">
 	<h1><a href="form-products.php" title="">Se deseja criar um novo entre aqui!</a></h1>
+	<input type="submit" value="sair" name="sair">
+	 <?php echo '<h2>Bom dia '.$_SESSION['nome'].'.</h2>'; ?>
 	<?php foreach($result as $post):?>
 	<h1 id="main-title"><?=$_POST['category']?></h1>
 		<table class="table" id="contacts-table">

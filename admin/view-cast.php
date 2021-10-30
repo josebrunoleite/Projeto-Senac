@@ -1,5 +1,9 @@
 <?php
 include('../config/connect.php');
+if ($_SESSION['logado'] != true) {
+/*	session_destroy();
+	header("Location: index.php");*/
+}
 
 $stmt = $conn->prepare("SELECT * FROM products ORDER BY id");
 $stmt->execute();

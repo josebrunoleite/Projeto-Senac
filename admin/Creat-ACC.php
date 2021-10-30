@@ -1,14 +1,12 @@
 <?php
 include_once('../config/connect.php');
-header('Location: view.php');
-   $stmt = $conn->prepare("INSERT INTO users (id, name, login, password) VALUES(:ID, :NAME, :LOGIN, :PASSWORD)");
 
-   $id = $_POST['id'];
-   $name = $_POST['name'];
+   $name = $_POST['nome'];
    $login = $_POST['login'];
-   $password = $_POST['password'];
+   $password = md5($_POST['password']);
 
-   $stmt->bindParam(":ID", $id);
+   $stmt = $conn->prepare("INSERT INTO users (name, login, password) VALUES(:NAME, :LOGIN, :PASSWORD)");
+
    $stmt->bindParam(":NAME", $name);
    $stmt->bindParam(":LOGIN", $login);
    $stmt->bindParam(":PASSWORD", $password);

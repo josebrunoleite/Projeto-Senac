@@ -3,7 +3,7 @@ include_once('config/connect.php');
 
 $cat = $_GET['cat'];
 
-$stmt = $conn->prepare('SELECT * FROM products ORDER BY id WHERE category = :cat');
+$stmt = $conn->prepare('SELECT * FROM products WHERE category = :cat');
 
 $stmt->execute(array('cat' => $cat));
 

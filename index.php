@@ -73,25 +73,9 @@ Codigo do instragram ficou imenso por isso eu retirei-->
 	<!--INICIO Footer-->
 	<?php include_once('footer.php') ?>
 	<!-- whatsapp button -->
+
 <div id="btn-whatsapp">
     <a href="https://api.whatsapp.com/send/?phone=5571986659473" target="_blank">
         <i class="bi bi-whatsapp"></i>
     </a>
 </div>
-<style type="text/css">
-	#btn-whatsapp{ 
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 2;
-    font-size: 2rem;
-    background-color: #25D366 !important; 
-    border-radius: 50px; 
-    height: 45px; 
-    padding: 6px 2px;
-    line-height: 1px; 
-	}
-	.bi-whatsapp{
-		color: whitesmoke;
-	}
-</style>

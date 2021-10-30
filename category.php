@@ -42,6 +42,5 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </div>
         <?php endforeach; ?>
     </div>
-    <!-- </linha1>
 
-<?= include('footer.php'); ?>
+<?php include('footer.php'); ?>

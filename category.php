@@ -1,3 +1,17 @@
+<?php
+include_once('config/connect.php');
+
+$cat = $_GET['cat'];
+
+$stmt = $conn->prepare('SELECT * FROM products ORDER BY id WHERE category = :cat');
+
+$stmt->execute(array('cat' => $cat));
+
+$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,42 +30,18 @@
     <!-- Cards -->
     <!-- <linha1> -->
     <div class="row row-cols-1 row-cols-md-4 g-4">
-        <div class="col">
-            <div class="card">
-            <img src="images/instagram-cards/card1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Gourmet 1</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <?php foreach ($results as $products): ?>
+            <div class="col">
+                    <div class="card">
+                    <img src="<?= $products['image'] ?>" class="card-img-top" alt="<?= $products['title'] ?>">
+                    <div class="card-body">
+                        <h5 class="card-title"><?= $products['title'] ?></h5>
+                        <p class="card-text"><?= $products['description'] ?></p>
+                    </div>
+                    </div>
             </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-            <img src="images/instagram-cards/card2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Gourmet 2</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-            <img src="images/instagram-cards/card3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Gourmet 3</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-            <img src="images/instagram-cards/card4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Gourmet 4</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            </div>
-        </div>
-        </div>
+        <?php endforeach; ?>
+    </div>
     <!-- </linha1>
-    <?php include_once('footer.php'); ?>
+
+<?= include('footer.php'); ?>

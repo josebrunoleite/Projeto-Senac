@@ -1,4 +1,4 @@
-<?php
+<?php 
 include_once('config/connect.php');
 
 $cat = $_GET['cat'];
@@ -8,7 +8,6 @@ $stmt = $conn->prepare('SELECT * FROM products WHERE category = :cat');
 $stmt->execute(array('cat' => $cat));
 
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
 
 
 ?>
@@ -24,7 +23,16 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <!-- Imagem Principal (Bolos) -->
 <section id="imag-up">
 		<div id="title-up">
-			<img id="title-ima" src="images/header/Reserva/marlucy gourmet.png" alt="Logo">
+			<h1>
+                <?php 
+                if ($cat == $bolos) {
+                    echo "Bolos";
+                }elseif ($cat == $especiais) {
+                    echo "Especiais";
+                }else ($cat == $almocos) {
+                    echo "Almoços";
+                }?>
+        </h1>
 		</div>
 	</section>
     <!-- Cards -->

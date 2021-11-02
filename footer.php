@@ -18,7 +18,7 @@
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-6">
     <p class="col-md-4 mb-0 link-light">© 2021 Company, Inc</p>
 
-    <a href="/" class="col-md-4 word-wrap text-foot d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+    <a href="#" class="col-md-4 word-wrap text-foot d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
       <p>Comidas congeladas e preparação de jantar/<br>almoço em domicílio na cidade de Salvador</p>
     </a>
 

@@ -21,9 +21,11 @@ if (isset($_POST['sair'])) {
 }
 ?>
 <div class="container">
-	<h1><a href="form-products.php" title="">Se deseja criar um novo entre aqui!</a></h1>
-	<input type="submit" value="sair" name="sair">
-	 <?php echo '<h2>Bom dia '.$_SESSION['nome'].'.</h2>'; ?>
+	<h1><a href="form-products.php" title="">Clique aqui para criar um novo!</a></h1>
+	<form action="" method="POST">
+	<input type="submit" value="Sair" name="sair">
+	</form>
+	 <?php echo '<h2>Bom dia, '.$_SESSION['nome'].'!</h2>'; ?>
 	<?php foreach($result as $post):?>
 	<h1 id="main-title"><?=$_POST['category']?></h1>
 		<table class="table" id="contacts-table">

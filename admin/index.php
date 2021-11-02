@@ -23,10 +23,7 @@
 				    <label for="exampleInputPassword1" class="form-label">Senha</label>
 				    <input type="password" class="form-control" placeholder="Digite sua senha" name="senha" id="exampleInputPassword1">
 				</div>
-				  <button type="submit" value="ENVIAR" class="btn btn-primary">Login</button>
-				  <div>
-				  <p>Ainda não é cadastrado ?</p><strong> <a href="register.php">Cadastre-se aqui</strong></a>
-				  </div>
+				  <button type="submit" value="ENVIAR" class="btn btn-primary">Entrar</button>
 				   <div id="emailHelp" class="form-text">Fotografado por <a href="https://unsplash.com/@leoroza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Léo Roza</a> de <a href="https://unsplash.com/s/photos/comida?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 				   	</div>
 				  

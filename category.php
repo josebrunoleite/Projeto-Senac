@@ -25,9 +25,9 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		<div id="title-up">
 			<h1>
                 <?php 
-                if ($cat == $bolos) {
+                if ($cat == 'bolos') {
                     echo "Bolos";
-                }elseif ($cat == $especiais) {
+                }elseif ($cat == 'especiais') {
                     echo "Especiais";
                 }else{
                     echo "Almoços";

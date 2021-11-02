@@ -1,5 +1,4 @@
 <?php
-
 include('../config/connect.php');
 session_start();
 $login = $_POST['login'];
@@ -23,5 +22,4 @@ if($stmt->rowCount()==1){
 }else{
     echo "Usario não encontrado";
 }
-
 ?>

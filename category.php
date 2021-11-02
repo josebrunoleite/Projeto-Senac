@@ -29,7 +29,7 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     echo "Bolos";
                 }elseif ($cat == $especiais) {
                     echo "Especiais";
-                }else ($cat == $almocos) {
+                }else{
                     echo "Almoços";
                 }?>
         </h1>

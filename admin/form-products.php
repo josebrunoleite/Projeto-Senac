@@ -1,32 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head lang="pt-br">
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Formuario de produtos</title>
-	<link rel="stylesheet" href="../body/admin/header-admin.php">
-</head>
-<?php
-session_start();
-if ($_SESSION['logado'] != true) {
-	session_destroy();
-	header("Location: index.php");
-}
-?>
-<body>
+	<?php include_once('header.php'); ?>
+
+	<?php include_once('navbar.php'); ?>
+	<main class="col-md-9 col-lg-10">
+		<h1>Cadastrar Produtos</h1>
 		<div class="input-group">
 		<form action="create-cast.php" method="POST" enctype="multipart/form-data" accept-charset="utf-8">
-			<input type="text" name="nome" class="input-group" placeholder="Título">
-			<select class="form-select" aria-label="Default select example">
-			  <option selected>Tipo de comida</option>
-			  <option value="almoco">Almoços</option>
-			  <option value="bolos">Bolos</option>
-			  <option value="especial">Especias</option>
+			<input type="text" name="nome" class="input-group form-control" placeholder="Título">
+			<select class="form-select" aria-label="Default select example" name="category" id="category">
+			  	<option selected>Tipo de comida</option>
+			  	<option value="almoco">Almoços</option>
+			  	<option value="bolos">Bolos</option>
+			  	<option value="especial">Especias</option>
 			</select>
-			<input type="file" name="image" class="input-group" placeholder="">
-			<input type="text" name="description" class="input-group" placeholder="Descrição">
+			<div class="input-group">
+			  <input type="file" name="image" class="input-group form-control" id="inputGroupFile02">
+			</div>
+			<input type="text" name="description" class="input-group form-control" placeholder="Descrição">
 			<button type="submit" value="ENVIAR"class="btn btn-primary mb-3">Enviar</button>
 		</form>
 	</div>
-</body>
-</html>
+	</main>
+	<?php include_once('footer.php'); ?>

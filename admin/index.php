@@ -12,7 +12,8 @@
 <body class="text-center">
 	<form id="form-login align-middle" action="logar.php" method="POST">
 		<div class="mb-3">
-			<img src="https://cdn.discordapp.com/emojis/237066985844768768.png" class="mb-4 mt-3" width="80px" alt="login">
+			<!--<a href="../index.php" style="text-decoration: none !important;"><p>Clique para voltar ao site.</p></a>-->
+			<img src="../images/favicon.png" class="mb-4 mt-3" width="80px" alt="login">
 			<h3>Login Painel Administrativo</h3>
 				</div>
 		  		<div class="mb-3">

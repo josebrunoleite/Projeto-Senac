@@ -11,9 +11,9 @@
                  
             <a class="nav-link" href="category.php?cat=bolos">Bolos</a>
 
-            <a class="nav-link" href="category.php?cat=especiais">Especias</a>
+            <a class="nav-link" href="category.php?cat=especial">Especias</a>
                         
-            <a class="nav-link" href="category.php?cat=almocos">Almoços</a>
+            <a class="nav-link" href="category.php?cat=almoco">Almoços</a>
           
             <a class="nav-link" href="formulario.php">Fale comigo</a>
 

@@ -1,3 +1,4 @@
+<?php include_once('config/connect.php'); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -26,17 +27,22 @@
 			    <div class="col-md-5">
 			      <img src="images/sobre-mim/nome.png" class="img-fluid rounded-start" style=" max-height: none !important; max-width: none !important; height: auto; width: 90%;" alt="Minha Foto">
 			    </div>
+			    <?php 
+
+				$stmt = $conn->prepare("SELECT * FROM about-me ORDER BY id");
+				$stmt->execute();
+
+				$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
+
+				?>
+				<?php foreach($results as $post): ?>
 			    <div class="col-md-7">
 			      <div class="card-body text-center">
 			        <h1 class="card-title">Sobre Mim</h1>
-			        <p class="card-text text-light text-break">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			        <p class="card-text text-light text-break"> <?=$post["description"]?> </p>
 			      </div>
 			    </div>
+			    <?php endforeach; ?>
 			  </div>
 			</div>
 		</div>

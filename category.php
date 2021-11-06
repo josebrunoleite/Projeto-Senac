@@ -29,8 +29,10 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     echo "Bolos";
                 }elseif ($cat == 'especial') {
                     echo "Especiais";
-                }else{
+                }elseif ($cat == 'almoco') {
                     echo "Almoços";
+                }else{
+                    echo "Não cadastrado";
                 }?>
         </h1>
 		</div>
@@ -41,9 +43,9 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php foreach ($results as $products): ?>
             <div class="col">
                     <div class="card">
-                    <img src="<?= $products['image'] ?>" class="card-img-top" alt="<?= $products['title'] ?>">
+                    <img src="<?= $products['image'] ?>" class="card-img-top" alt="<?= $products['name'] ?>">
                     <div class="card-body">
-                        <h5 class="card-title"><?= $products['title'] ?></h5>
+                        <h5 class="card-title"><?= $products['name'] ?></h5>
                         <p class="card-text"><?= $products['description'] ?></p>
                     </div>
                     </div>

@@ -1,6 +1,22 @@
-input, select{
+input, select, button{
 	margin-bottom: 10px !important;
 }
-#sidebarMenu{
-	height: 100%;
+button{
+	padding: 0.2rem 0.5rem;
+	border-radius: 5px;
+	font-size: 24px;
+}
+.nav-item a{
+	text-decoration: none;
+	color: white;
+}
+.nav-item a:hover{
+	color: #a4bceb !important;
+}
+@media screen and (max-width: 900px) {
+  button{
+  	float: right;
+  	padding: 0.3rem 0.6rem;
+  	margin-top: 0px;
+  }
 }

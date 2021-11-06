@@ -6,7 +6,6 @@
 	<!-- <editar postagens> -->
 		<main class="col-md-9 col-lg-10">
 			<h1 id="main-title">Produtos</h1>
-			<?php foreach($results as $post): ?>
 			<table class="table" id="contacts-table">
 					<thead>
 						<tr>
@@ -16,6 +15,7 @@
 						</tr>
 					</thead>
 					<tbody>
+						<?php foreach($results as $post): ?>
 							<tr>
 							  <td scope="row"><?=$post["id"]?></td>
 							  <td scope="row"><?=$post["name"]?></td>
@@ -24,10 +24,9 @@
 							  	<a href="delete-cast.php?id=<?=$post['id']?>">Excluir</a>
 							  </td>
 							</tr>
-					   	
+					   	<?php endforeach;?>
 					</tbody>
 			</table>
-		<?php endforeach;?>
 		</main>
 		<!-- </editar postagens> -->
 	<?php include_once('footer.php'); ?>

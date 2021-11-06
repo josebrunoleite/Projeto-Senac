@@ -23,7 +23,7 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <!-- Imagem Principal (Bolos) -->
 <section id="imag-up">
 		<div id="title-up">
-			<h1>
+			<h1 style="color: #828282;">
                 <?php 
                 if ($cat == 'bolos') {
                     echo "Bolos";

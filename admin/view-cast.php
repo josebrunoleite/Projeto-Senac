@@ -21,7 +21,7 @@
 							  <td scope="row"><?=$post["name"]?></td>
 							  <td scope="action">
 							  	<a href="products-update.php?id=<?=$post['id']?>" title="">Editar</a>
-							  	<a href="delete-products.php?id=<?=$post['id']?>">Excluir</a>
+							  	<a href="../config/delete-products.php?id=<?=$post['id']?>">Excluir</a>
 							  </td>
 							</tr>
 					   	<?php endforeach;?>

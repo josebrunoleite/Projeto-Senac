@@ -18,7 +18,7 @@
 			<a href="">Atualizar Slides</a>
 		</li>
 		<li class="nav-item">
-			<a href="">Atualizar Sobre Mim</a>
+			<a href="form-about.php">Atualizar Sobre Mim</a>
 		</li>
 		<form action="" method="POST">
 		<li class="nav-item mb-2">

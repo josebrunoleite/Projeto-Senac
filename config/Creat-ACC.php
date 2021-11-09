@@ -1,5 +1,5 @@
 <?php
-include_once('../config/connect.php');
+include_once('../conec/connect.php');
 
    $name = $_POST['nome'];
    $login = $_POST['login'];
@@ -12,4 +12,5 @@ include_once('../config/connect.php');
    $stmt->bindParam(":PASSWORD", $password);
    $stmt->execute();
 
+header("Location: ../admin/index.php")
 ?>

@@ -1,4 +1,4 @@
-<?php include_once('config/connect.php'); ?>
+<?php include_once('conec/connect.php'); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

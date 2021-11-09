@@ -1,5 +1,5 @@
 <?php 
-include_once('config/connect.php');
+include_once('conec/connect.php');
 
 $cat = $_GET['cat'];
 

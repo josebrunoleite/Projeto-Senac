@@ -15,7 +15,7 @@ if ($_SESSION['logado'] != true) {
 ?>
 <body>
 		<div class="input-group">
-		<form action="Creat-ACC.php" method="POST" enctype="multipart/form-data" accept-charset="utf-8">
+		<form action="../config/Creat-ACC.php" method="POST" enctype="multipart/form-data" accept-charset="utf-8">
 			<input type="text" name="nome" class="input-group" placeholder="Nome">
 			<input type="text" name="login" class="input-group" placeholder="Login">
 			<input type="text" name="password" class="input-group" placeholder="password">

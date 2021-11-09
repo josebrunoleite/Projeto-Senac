@@ -1,5 +1,5 @@
 <?php
-include_once('../config/connect.php');
+include_once('../conec/connect.php');
  $stmt = $conn->prepare("INSERT INTO products (name, category, image, description) VALUES(:NAME, :CATEGORY, :IMAGE, :DESCRIPTION)");
 
 $name = $_POST['nome'];
@@ -19,6 +19,6 @@ $stmt->bindParam(":DESCRIPTION", $description);
 $stmt->bindParam(":IMAGE", $image);
 $stmt->execute();
 
-header('Location: view-cast.php');
+header('Location: ../admin/view-cast.php');
 
 ?>

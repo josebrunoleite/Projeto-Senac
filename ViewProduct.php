@@ -1,6 +1,6 @@
 <?php
 
-include_once('../config/connect.php');
+include_once('conec/connect.php');
 
 $stmt = $conn->prepare("SELECT * FROM products ORDER BY id");
 $stmt->execute();

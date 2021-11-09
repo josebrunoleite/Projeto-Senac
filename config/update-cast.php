@@ -1,5 +1,5 @@
 <?php
-include('../config/connect.php');
+include('../conec/connect.php');
 
 $id = $_POST['id'];
 $name = $_POST['nome'];
@@ -24,6 +24,6 @@ $stmt->bindParam(':IMAGE', $image);
 $stmt->bindParam(':DESCRIPTION', $description);
 $stmt->execute();
 
-	header('Location: view-cast.php');
+	header('Location: ../admin/view-cast.php');
 
 ?>

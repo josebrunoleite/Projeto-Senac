@@ -1,5 +1,5 @@
 <?php 
-include_once('../config/connect.php');
+include_once('../conec/connect.php');
 //Coloque aqui a sessão
 
 $id = $_GET['id'];
@@ -12,6 +12,6 @@ $stmt->execute();
 
 echo "O $id foi apagado com sucesso!";
 
-header('Location: view-cast.php');
+header('Location: ../admin/view-cast.php');
 
 ?>

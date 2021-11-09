@@ -32,6 +32,7 @@ include('../config/connect.php');
 		<input type="text" name="description" class="input-group form-control" placeholder="<?=$products['description']?>">
 		<button type="submit" value="ENVIAR"class="btn btn-primary mb-3">Enviar</button>
 		<img src="../<?=$products["image"]?>" class="img-thumbnail rounded float-end" alt="Imagem Existente" width="200px">
+		<input type="text" name="id" value="<?=$_GET['id']?>" placeholder="<?=$_GET['id']?>">
 		<?php 	endforeach;	 ?>
 		</form>
 	</div>

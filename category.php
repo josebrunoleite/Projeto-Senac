@@ -45,7 +45,7 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <div class="card">
                     <img src="<?= $products['image'] ?>" class="card-img-top" alt="<?= $products['name'] ?>">
                     <div class="card-body">
-                        <h5 class="card-title"><?= $products['name'] ?></h5>
+                        <h5 class="card-title text-center"><?= $products['name'] ?></h5>
                         <p class="card-text"><?= $products['description'] ?></p>
                     </div>
                     </div>

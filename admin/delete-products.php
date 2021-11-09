@@ -11,5 +11,7 @@ $stmt->bindParam(":ID", $id);
 $stmt->execute();
 
 echo "O $id foi apagado com sucesso!";
+
+header('Location: view-cast.php');
+
 ?>
-<h2><a href="view-cast.php" title="voltar"></br>Click aqui pra voltar pra lista</a></h2>

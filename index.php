@@ -29,7 +29,7 @@
 			    </div>
 			    <?php 
 
-				$stmt = $conn->prepare("SELECT * FROM about-me ORDER BY id");
+				$stmt = $conn->prepare("SELECT * FROM about ORDER BY id");
 				$stmt->execute();
 
 				$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
@@ -38,7 +38,7 @@
 				<?php foreach($results as $post): ?>
 			    <div class="col-md-7">
 			      <div class="card-body text-center">
-			        <h1 class="card-title">Sobre Mim</h1>
+			        <h1 class="card-title"><?=$post["title"]?></h1>
 			        <p class="card-text text-light text-break"> <?=$post["description"]?> </p>
 			      </div>
 			    </div>

@@ -23,7 +23,7 @@
     </a>
 
     <ul class="nav col-md-4 justify-content-end">
-      <li class="nav-item"><a href="#" target="_blank" class="nav-link px-2"><i class="bi bi-envelope link-light"></i></i></a></li>
+      <li class="nav-item"><a href="https://tido.com.br/grupo01/fale-comigo.php" class="nav-link px-2"><i class="bi bi-envelope link-light"></i></i></a></li>
       <li class="nav-item"><a href="https://www.instagram.com/marlucy_gourmet/" target="_blank"  class="nav-link px-2"><i class="bi bi-instagram link-light"></i></a></li>
       <li class="nav-item"><a href="#" target="_blank"  class="nav-link px-2"><i class="bi bi-linkedin link-light"></i></a></li>
       <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=5571986659473" target="_blank"  class="nav-link px-2"><i class="bi bi-whatsapp link-light"></i></a></li>

@@ -52,7 +52,7 @@
 		
 		<div class="card-group">
 		  <div class="card">
-		  	<a href="category.php?cat=bolos">
+		  	<a href="category.php?cat=bolos" class="text-center">
 		    <img src="images/card/card-1.png" class="card-img-top " alt="...">
 		    </a>
 		    <div class="card-body">
@@ -60,7 +60,7 @@
 		    </div>
 		  </div>
 		  <div class="card">
-		  	<a href="category.php?cat=especial">
+		  	<a href="category.php?cat=especial" class="text-center">
 		    <img src="images/card/card-2.png" class="card-img-top " alt="...">
 		    </a>
 		    <div class="card-body">
@@ -68,7 +68,7 @@
 		    </div>
 		  </div>
 		  <div class="card">
-		  	<a href="category.php?cat=almoco">
+		  	<a href="category.php?cat=almoco" class="text-center">
 		    <img src="images/card/card-3.png" class="card-img-top" alt="...">
 		    </a>
 		    <div class="card-body">

@@ -15,8 +15,9 @@ $image = 'images/images-cat/'.$arquivo['name'];
 
 
 $stmt->bindParam(':ID', $id);
+$stmt->bindParam(':NAME', $name);
+$stmt->bindParam(':CATEGORY', $category);
 $stmt->bindParam(':IMAGE', $image);
-$stmt->bindParam(':NAME', $nome);
 $stmt->bindParam(':DESCRIPTION', $description);
 $stmt->execute();
 ?>

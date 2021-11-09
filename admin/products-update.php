@@ -17,8 +17,8 @@ include('../config/connect.php');
 <main class="col-md-9 col-lg-10 p-4">
 	<h1 id="main-title" class="text-center">Atualizar Produto</h1>
 	<div class="input-group justify-content-center">	
-	<form action="create-cast.php" method="POST" enctype="multipart/form-data" accept-charset="utf-8">
-		<?php foreach ($resu  as $products):?>	
+	<form action="update-cast.php" method="POST" enctype="multipart/form-data" accept-charset="utf-8">
+		<?php foreach ($resu  as $products):?>
 		<input type="text" name="nome" class="input-group form-control" placeholder="<?=$products["name"]?>">
 		<select class="form-select text-capitalize" aria-label="Default select example" name="category" id="category">
 		  	<option selected value="<?=$products["category"]?>"><?=$products["category"]?></option>

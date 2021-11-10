@@ -8,7 +8,9 @@ require 'lib/vendor/autoload.php';
 $mail = new PHPMailer(true);
 
 $nome = $_POST['nome'];
-$assunto = $_POST['assunto'];
+$motivo = $_POST['motivo'];
+$email = $_POST['email'];
+$comente = $_POST['comente'];
 
 try {
 
@@ -24,9 +26,9 @@ $mail->setFrom('alunossenac@tido.com.br', 'Mailer');
 $mail->addAddress('alunossenac@tido.com.br', 'Tido Ferraz'); 
 
  $mail->isHTML(true); 
-$mail->Subject = "$assunto";
-$mail->Body = "Olá, <b> $nome !</b>";
-$mail->AltBody = "Olá, $nome ";
+$mail->Subject = "$motivo";
+$mail->Body = "Olá, <b> $nome !</b> <p> $email </p> <p> $comente </p>";
+$mail->AltBody = "Olá, $nome - $email, - $comente ";
 
  $mail->send();
 echo 'testando';

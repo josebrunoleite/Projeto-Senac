@@ -2,7 +2,6 @@
 #imag-up{
 	display: flex;
 	align-items: center;
-	background: url(../images/slide/padaria.png);
 	height: 500px;
 	background-repeat:;
 	justify-content: center;
@@ -27,6 +26,7 @@
 	background-color: rgba(255, 255, 255, 0.5);
 	border-radius: 5px;
 	padding: 5px;
+	max-width: 50%;
 
 }
 #title-ima{

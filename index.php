@@ -1,10 +1,20 @@
 <?php include_once('conec/connect.php'); ?>
+<?php
+$stmt = $conn->prepare("SELECT * FROM home WHERE id = :ID");
+$stmt->execute(array('ID' => '1'));
+$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
+//SEPARAÇÃO O DE CIMA É DO SOBRE MIM E O DE BAIXO É DO SLIDE
+$st = $conn->prepare("SELECT * FROM home WHERE id = :ID");
+$st->execute(array('ID' => '2'));
+$resul = $st->fetchALL(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
 	<title>Projeto Senac</title>
 	<?php include("body/header.php");?>
+
 </head>
 <header>
 	<!--INICIO-->
@@ -12,30 +22,23 @@
 </header>
 <body>
 	<!--INICIO imagem principal-->
-	<section id="imag-up">
+	<?php foreach ($resul as $up):?>
+	<section id="imag-up" style="background-image: url(<?=$up['image']?>);">
 		<div id="title-up">
-			<h1 style="color: red;">MarlucyGourmet</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<h1 style="color: red;"><?=$up['title']?></h1>
+			<p class="text-break"><?=$up['description']?></p>
 		</div>
 	</section>
+	<?php endforeach; ?>
 	<!--INICIO Sobre-mim-->
 	<section class="info">
 		<div class="container d-flex">
 			<div class="card mb-3 bg-transparent d-flex " style="">
 			  <div class="row g-0 justify-content-center">
 			    <div class="col-md-5">
-			      <img src="images/sobre-mim/nome.png" class="img-fluid rounded-start" style=" max-height: none !important; max-width: none !important; height: auto; width: 90%;" alt="Minha Foto">
-			    </div>
-			    <?php 
-
-				$stmt = $conn->prepare("SELECT * FROM about ORDER BY id");
-				$stmt->execute();
-
-				$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
-
-				?>
 				<?php foreach($results as $post): ?>
+			      <img src="<?=$post["image"]?>" class="img-fluid rounded-start" style=" max-height: none !important; max-width: none !important; height: auto; width: 90%;" alt="Minha Foto">
+			    </div>
 			    <div class="col-md-7">
 			      <div class="card-body text-center">
 			        <h1 class="card-title"><?=$post["title"]?></h1>

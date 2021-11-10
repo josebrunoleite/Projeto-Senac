@@ -17,7 +17,7 @@
           
             <a class="nav-link" href="fale-comigo.php">Fale comigo</a>
 
-            <a class="nav-link" href="admin/index.php">Login</a>
+            <a class="nav-link" href="admin/index.php"><i class="bi bi-file-lock-fill"></i></a>
          
         </ul>
       </div>

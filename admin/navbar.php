@@ -15,10 +15,10 @@
 			<a href="form-products.php">Cadastrar Produtos</a>
 		</li>
 		<li class="nav-item">
-			<a href="">Atualizar Slides</a>
+			<a href="form-home-slide.php">Atualizar Slides</a>
 		</li>
 		<li class="nav-item">
-			<a href="form-about.php">Atualizar Sobre Mim</a>
+			<a href="form-home.php">Atualizar Sobre Mim</a>
 		</li>
 		<form action="" method="POST">
 		<li class="nav-item mb-2">

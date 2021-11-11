@@ -31,8 +31,8 @@ $mail->Body = "Olá, <b> $nome !</b> <p> $email </p> <p> $comente </p>";
 $mail->AltBody = "Olá, $nome - $email, - $comente ";
 
  $mail->send();
-echo 'testando';
+    header('Location: ../fale-comigo.php')
 } catch (Exception $e) {
-echo "testando";
+ header('Location: ../fale-comigo.php');
 }
 ?>

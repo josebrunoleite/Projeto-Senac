@@ -16,7 +16,7 @@
 			  <input type="file" name="image" class="input-group form-control" id="inputGroupFile02">
 			</div>
 			<input type="text" name="description" class="input-group form-control" placeholder="Descrição">
-			<button type="submit" value="ENVIAR"class="btn btn-primary mb-3">Enviar</button>
+			<button type="submit" value="ENVIAR"class="btn btn-primary mt-3">Enviar</button>
 		</form>
 	</div>
 	</main>

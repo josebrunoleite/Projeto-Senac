@@ -5,5 +5,5 @@ $id = $_GET['id'];
 $stmt->bindParam(":ID", $id);
 $stmt->execute();
 
-echo "Registro apagado";
+header("Location: ../admin/")
 ?>

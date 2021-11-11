@@ -11,6 +11,7 @@
 						<tr>
 							<th scope="col">#</th>
 							<th scope="col">Nome</th>
+							<th scope="col">Categoria</th>
 							<th scope="col">Ações</th>
 						</tr>
 					</thead>
@@ -18,7 +19,8 @@
 						<?php foreach($results as $post): ?>
 							<tr>
 							  <td scope="row"><?=$post["id"]?></td>
-							  <td scope="row"><?=$post["name"]?></td>
+							  <td scope="row" class="text-capitalize"><?=$post["name"]?></td>
+							  <td scope="row" class="text-capitalize"><?=$post['category']?></td>
 							  <td scope="action">
 							  	<a href="products-update.php?id=<?=$post['id']?>" title="">Editar</a>
 							  	<a href="../config/delete-products.php?id=<?=$post['id']?>">Excluir</a>

@@ -12,5 +12,5 @@ include_once('../conec/connect.php');
    $stmt->bindParam(":PASSWORD", $password);
    $stmt->execute();
 
-header("Location: ../admin/index.php")
+header("Location: ../admin/")
 ?>

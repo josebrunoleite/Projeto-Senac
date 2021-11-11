@@ -41,7 +41,7 @@ $resul = $st->fetchALL(PDO::FETCH_ASSOC);
 			    </div>
 			    <div class="col-md-7">
 			      <div class="card-body text-center">
-			        <h1 class="card-title"><?=$post["title"]?></h1>
+			        <h1 class="card-title text-breake"><?=$post["title"]?></h1>
 			        <p class="card-text text-light text-break"> <?=$post["description"]?> </p>
 			      </div>
 			    </div>

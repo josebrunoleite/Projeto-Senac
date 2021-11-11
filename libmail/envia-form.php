@@ -3,14 +3,17 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
-
-$mail = new PHPMailer(true);
-
 $nome = $_POST['nome'];
 $motivo = $_POST['motivo'];
 $email = $_POST['email'];
 $comente = $_POST['comente'];
+
+//if (isset($nome) && isset($motivo) && isset($email) && isset($comente)) {
+
+
+require 'vendor/autoload.php';
+
+$mail = new PHPMailer(true);
 
 try {
 
@@ -31,8 +34,12 @@ $mail->Body = "Olá, <b> $nome !</b> <p> $email </p> <p> $comente </p>";
 $mail->AltBody = "Olá, $nome - $email, - $comente ";
 
  $mail->send();
-    header('Location: ../fale-comigo.php')
+    header('Location: ../fale-comigo.php?enviado=send');
 } catch (Exception $e) {
- header('Location: ../fale-comigo.php');
+ header('Location: ../fale-comigo.php?enviado=falhou');
 }
+/*}
+else{
+    header('Location: ../fale-comigo.php?enviado=falhou');
+}*/
 ?>

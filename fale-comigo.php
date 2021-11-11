@@ -8,6 +8,7 @@
 </head>
 <body>
 	<?php include('navbar.php')?>
+	<?php include('tester.php') ?>
 	<h1 class="text-center mt-3"> Formulário para contato</h1>
 	<p class="text-center">Preencha o formulário abaixo e aguarde o contato</p>
 	<form class="container" method="POST" action="libmail/envia-form.php">

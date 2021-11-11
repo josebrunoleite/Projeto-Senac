@@ -14,21 +14,30 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Bolos</title>
+    <title><?php
+    if ($cat == 'bolos') {
+        echo "Bolos";
+    }elseif ($cat == 'especial') {
+        echo "Salgados";
+    }elseif ($cat == 'almoco') {
+        echo "Almoços";
+    }else{
+        echo "Não cadastrado";
+    }?></title>
     <?php include_once('body/header.php'); ?>
 
 </head>
 <?php include_once('navbar.php'); ?>
 <body>
     <!-- Imagem Principal (Bolos) -->
-<section id="imag-up">
+<section id="imag-up" style="background-image: url(images/slide/padaria.png);">
 		<div id="title-up">
-			<h1 style="color: #828282;">
+			<h1 style="color: #FF0000;">
                 <?php 
                 if ($cat == 'bolos') {
                     echo "Bolos";
                 }elseif ($cat == 'especial') {
-                    echo "Especiais";
+                    echo "Salgados";
                 }elseif ($cat == 'almoco') {
                     echo "Almoços";
                 }else{

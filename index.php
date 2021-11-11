@@ -23,7 +23,7 @@ $resul = $st->fetchALL(PDO::FETCH_ASSOC);
 <body>
 	<!--INICIO imagem principal-->
 	<?php foreach ($resul as $up):?>
-	<section id="imag-up" style="background-image: url(<?=$up['image']?>);">
+	<section id="imag-up" style="background-i ge: url(<?=$up['image']?>);">
 		<div id="title-up">
 			<h1 style="color: red;"><?=$up['title']?></h1>
 			<p class="text-break"><?=$up['description']?></p>
@@ -53,7 +53,7 @@ $resul = $st->fetchALL(PDO::FETCH_ASSOC);
 	<!--INICIO Cards Tripo-->
 	<section id="CARD">
 		
-		<div class="card-group">
+		<div class="card-group py-3">
 		  <div class="card">
 		  	<a href="category.php?cat=bolos" class="text-center">
 		    <img src="images/card/card-1.png" class="card-img-top " alt="...">

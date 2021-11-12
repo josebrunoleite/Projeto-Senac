@@ -22,7 +22,16 @@
             </div>
         </div>
     </div>
-</div>				
+</div>
+<div class="modal fade" id="myModaDel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Deletado com sucesso!</h4>
+            </div>
+        </div>
+    </div>
+</div>      
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -31,6 +40,7 @@
 		<?php
 
 			$form = $_GET['enviado'] ;
+
 			if($form == "send"){ ?>
 				<script type="text/javascript">
 					$(document).ready(function(){
@@ -43,6 +53,12 @@
 						$('#myModalN').modal('show');
 					});
 				</script>
-			<?php } ?>
+			<?php }elseif ($form == "deletado"){ ?>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        $('#myModaDel').modal('show');
+                    });
+                </script>
+            <?php } ?>
     </body>
 </html>

@@ -3,6 +3,8 @@
 
 	<?php include_once('navbar.php'); ?>
 
+	<?php include_once('../tester.php'); ?>
+
 	<!-- <editar postagens> -->
 		<main class="col-md-9 col-lg-10">
 			<h1 id="main-title">Produtos</h1>
@@ -31,4 +33,4 @@
 			</table>
 		</main>
 		<!-- </editar postagens> -->
-	<?php include_once('footer.php'); ?>
+	<?php include_once('footer.php?enviado=falhou'); ?>

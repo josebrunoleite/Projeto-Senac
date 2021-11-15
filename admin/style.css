@@ -1,3 +1,28 @@
+*{
+padding: 0;
+margin: 0;
+background: rgba(237, 160, 12, 0.6);
+}
+.titulo{
+	
+	padding-bottom: 5px;
+}
+.dark, .dark a, .dark h2{
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important;
+}
+table{
+	2px solid black
+}
+h1{
+	margin-bottom: 0px;
+}
+thead,tbody, .white-b {
+	background-color: white;
+}
+tbody a{
+	background-color: #f4c66d;
+}
 input, select, button{
 	margin-bottom: 10px !important;
 }
@@ -13,6 +38,9 @@ button{
 .nav-item a:hover{
 	color: #a4bceb !important;
 }
+hr{
+	margin: 0.5rem 0;
+}
 #sidebarMenu{
   height: 100vh;
 	-webkit-box-shadow: 10px 3px 5px 0px rgba(50, 50, 50, 0.75);
@@ -21,8 +49,19 @@ button{
 }
 @media screen and (max-width: 900px) {
   button{
+  }
+}
+@media screen and (max-width: 1020px) {
+	button{
   	float: right;
   	padding: 0.3rem 0.6rem;
   	margin-top: 0px;
+  	background-color: white;
+  }
+  #sidebarMenu{
+  	height: auto !important;
+  }
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  	line-height: normal !important;
   }
 }

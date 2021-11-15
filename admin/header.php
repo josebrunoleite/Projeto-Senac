@@ -1,12 +1,5 @@
 <?php
 include('../conec/connect.php');
-
-$id = 
-
-$stmt = $conn->prepare("SELECT * FROM products ORDER BY category");
-$stmt->execute();
-
-$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
 ?>
 <?php
 session_start();

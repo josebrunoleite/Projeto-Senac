@@ -3,11 +3,22 @@ include_once('conec/connect.php');
 
 $cat = $_GET['cat'];
 
-$stmt = $conn->prepare('SELECT * FROM products WHERE category = :cat');
+if ($cat == 'bolos') {
+    $stmt = $conn->prepare('SELECT * FROM products WHERE category = :cat');
+    $stmt->execute(array('cat' => $cat));
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC); 
+}elseif ($cat == 'especial'){
+    $stmt = $conn->prepare('SELECT * FROM products WHERE category = :cat');
+    $stmt->execute(array('cat' => $cat));
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC); 
+}elseif ($cat == "almoco"){
+    $stmt = $conn->prepare('SELECT * FROM products WHERE category = :cat');
+    $stmt->execute(array('cat' => $cat));
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC); 
+}else{
+    header("Location: index.php");
+}
 
-$stmt->execute(array('cat' => $cat));
-
-$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 ?>
@@ -19,10 +30,8 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
         echo "Bolos";
     }elseif ($cat == 'especial') {
         echo "Salgados";
-    }elseif ($cat == 'almoco') {
-        echo "Almoços";
     }else{
-        echo "Não cadastrado";
+        echo "Almoços";
     }?></title>
     <?php include_once('body/header.php'); ?>
 
@@ -38,10 +47,8 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     echo "Bolos";
                 }elseif ($cat == 'especial') {
                     echo "Salgados";
-                }elseif ($cat == 'almoco') {
-                    echo "Almoços";
                 }else{
-                    echo "Não cadastrado";
+                    echo "Almoços";
                 }?>
         </h1>
 		</div>

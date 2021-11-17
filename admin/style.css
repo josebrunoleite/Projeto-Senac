@@ -1,7 +1,9 @@
 *{
 padding: 0;
 margin: 0;
-background: rgba(237, 160, 12, 0.6);
+}
+body{
+	background: rgba(237, 160, 12, 0.4);
 }
 .titulo{
 	
@@ -19,9 +21,6 @@ h1{
 }
 thead,tbody, .white-b {
 	background-color: white;
-}
-tbody a{
-	background-color: #f4c66d;
 }
 input, select, button{
 	margin-bottom: 10px !important;

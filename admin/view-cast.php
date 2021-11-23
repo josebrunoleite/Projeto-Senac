@@ -25,7 +25,7 @@ if ($id == 'bolos') {
 ?>
 	<!-- <editar postagens> -->
 		<main class="col-md-9 col-lg-10">
-			<h1 id="main-title" class="text-center titulo">Deseja ver <a href="?id=bolos" class="link-primary" title="">Bolos</a> ou  <a href="?id=especial" class="link-primary" title="">salgados</a> ou <a href="?id=almoco" class="link-primary" title="">Almoços</a></h1>
+			<h1 id="main-title" class="text-center titulo">Deseja ver <a href="?id=bolos" class="link-primary" title="">Bolos</a>, <a href="?id=especial" class="link-primary" title="">Salgados</a> ou <a href="?id=almoco" class="link-primary" title="">Almoços</a></h1>
 			<table class="table" id="contacts-table table-bordered">
 					<thead>
 						<tr>

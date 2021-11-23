@@ -26,6 +26,9 @@
   .text-foot{
     overflow-wrap: break-word !important; 
   }
+  #title-up{
+    display: inline-table;
+  }
 }
 .row > *{
   --bs-gutter-x: 0rem !important;

@@ -22,7 +22,7 @@ $resul = $st->fetchALL(PDO::FETCH_ASSOC);
 		</div>
 		<div class="input-group">
 		  <span class="input-group-text">Insira Sua</br> Nova Descrição</span>
-		  <textarea class="form-control" name="description"aria-label="With textarea" placeholder="<?=$home['description']?>"></textarea>
+		  <textarea class="form-control" name="description"aria-label="With textarea" placeholder="<?=$home['description']?>"><?=$home['description']?></textarea>
 		</div>
 		<button type="submit" name="id" value="1" class="btn btn-primary mb-3">Enviar</button>
 		<img src="../<?=$home["image"]?>" class="img-thumbnail rounded float-end" alt="Imagem Existente" width="200px">

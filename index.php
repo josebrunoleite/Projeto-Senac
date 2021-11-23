@@ -23,7 +23,7 @@ $resul = $st->fetchALL(PDO::FETCH_ASSOC);
 <body>
 	<!--INICIO imagem principal-->
 	<?php foreach ($resul as $up):?>
-	<section id="imag-up" style="background-i ge: url(<?=$up['image']?>);">
+	<section id="imag-up" style="background-image: url(images/slide/padaria.png);">
 		<div id="title-up">
 			<h1 style="color: red;"><?=$up['title']?></h1>
 			<p class="text-break"><?=$up['description']?></p>
